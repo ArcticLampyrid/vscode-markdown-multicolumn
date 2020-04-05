@@ -1,6 +1,6 @@
 {
     "name": "vscode-markdown-multicolumn",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "displayName": "MultiColumn for Markdown",
     "description": "MultiColumn plugin for VS Code's built-in markdown preview.",
     "keywords": [
@@ -27,6 +27,9 @@
         "Other"
     ],
     "contributes": {
+        "markdown.previewStyles": [
+            "./multicolumn.css"
+        ],
         "markdown.markdownItPlugins": true
     },
     "devDependencies": {
@@ -42,6 +45,6 @@
         "watch": "tsc -watch -p ./"
     },
     "dependencies": {
-        "markdown-it-multicolumn": "^0.1.4"
+        "markdown-it-multicolumn": "^0.1.5"
     }
 }
